@@ -2,6 +2,7 @@ import React from 'react';
 import {TouchableOpacity} from 'react-native';
 import {KeyboardAvoidingView} from 'react-native';
 import {TextInput} from 'react-native';
+import {GlobalStyles} from  '../Assets/Colors/Color';
 import {
   Text,
   View,
@@ -69,7 +70,7 @@ const Home = () => {
               </Text>
               <View style={styles.inputArea}>
                 <View style={styles.randomFormButton}>
-                     <TextInput
+                     {/* <TextInput
                     style={styles.numberInput}
                     // ref={pin1Ref}
                     maxLength={1}
@@ -81,10 +82,9 @@ const Home = () => {
                     //   }
                     // }}
                     // value={pin1}
-                  />
-                  <TouchableOpacity>
+                  /> */}
                     <Text style={styles.randomTextButton}>Random Picks</Text>
-                  </TouchableOpacity>
+                  
                 </View>
                 <View style={styles.inputAreas}>
                   <TextInput
@@ -222,7 +222,7 @@ const styles = StyleSheet.create({
   screen: {
     width: '100%',
     height: '100%',
-    backgroundColor: '#257ABE',
+    backgroundColor: GlobalStyles.colors.primary700,
   },
   formTextOuter: {
     width: '90%',
@@ -241,7 +241,8 @@ const styles = StyleSheet.create({
     marginLeft: '5%',
   },
   randomTextButton: {
-    backgroundColor: '#841584',
+    backgroundColor: 'white',
+    color:'white'
   },
   randomFormButton:{
     backgroundColor:'white',
